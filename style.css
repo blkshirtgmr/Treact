@@ -5,3 +5,62 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  max-width: 100vw;
+}
+.section{
+  padding: 0 32px;
+}
+.row{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container{
+  width: 100%;
+  padding: 96px 0px;
+}
+.nav{
+  padding-top: 32px;
+  display: flex;
+}
+.nav__row{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 100%;
+  max-width: 1480px;
+}
+.nav__logo{
+  display: flex;
+   align-items: center;
+}
+.nav__logo--img{
+  height: 40px;
+  width: 40px;
+}
+.nav__logo--title{
+  font-weight: 900;
+  font-size: 28px;
+  align-items: center;
+  margin-left: 12px;
+}
+.nav__link{
+  padding: 0 18px;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav__link--primary{
+  padding: 10px 32px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6415ff;
+  border-radius: 28px;
+  border: none;
+}
+.nav__link:hover {
+  width: 100%;
+}
