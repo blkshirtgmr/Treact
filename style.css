@@ -174,3 +174,48 @@ p{
   padding-right: 128px;
   opacity: 0.5;
 }
+.section__tag{
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 12px;
+  color: #6415ff;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.section__title{
+  font-weight: 700;
+  font-size: 52px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.section__para{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  padding-bottom: 52px;
+}
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.feature{
+  width: calc(100% / 3);
+  /* max-width: 400px; */
+  padding: 10px 48px;
+}
+.feature__row{
+  display: flex;
+  padding: 10px;
+}
+.feature__img{
+  width: 64px;
+  height: 64px;
+  padding: 20px;
+  border: 2px solid rgb(229, 231, 235);
+  border-radius: 500px;
+}
+.feature__text{
+  padding-left: 20px;
+}
