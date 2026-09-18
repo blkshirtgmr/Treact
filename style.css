@@ -221,24 +221,26 @@ p{
 }
 .quality__row{
   display: flex;
+  max-width: 1380px;
+  margin: 0 auto;
   width: 100%;
   padding: 0px 18px;
 }
 .quality__description{
-  width: 50%;
+  width: 40%;
   padding: 0px 32px;
 }
 .quality__tag{
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 12px;
   color: #6415ff;
   text-align: left;
   letter-spacing: 3px;
 }
 .quality__title{
-  font-weight: 700;
-  font-size: 52px;
+  font-weight: 900;
+  font-size: 48px;
   padding-bottom: 32px;
   text-align: left;
 }
@@ -249,7 +251,88 @@ p{
   font-size: 18px;
   padding-bottom: 52px;
 }
+.quality__btn{
+  padding: 10px 32px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6415ff;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+}
+.quality__btn:hover{
+  background-color: #4b0fb3;
+  transition: all 300ms ease;
+}
 .quality__img--wrapper{
-  width: 50%;
+  width: 70%;
   padding: 0px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.quality__img{
+  max-width: 80%;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgb(229, 231, 235);
+}
+.quality__grid{
+  scale: 10%;
+  color: #5500ff;
+  position: absolute;
+  transform: translate(370%, 240%);
+  z-index: 1;
+  fill: #5500ff;
+}
+.steps__img--wrapper{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.steps__img{
+  width: 100%;
+  z-index: 2;
+}
+.steps__grid{
+  scale: 10%;
+  color: #5500ff;
+  position: absolute;
+  transform: translate(-291%, 130%);
+  z-index: 1;
+  fill: #5500ff;
+}
+.steps__tag{
+  padding-bottom: 10px;
+  color:#6415ff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.steps__title{
+  font-size: 52px;
+  font-weight: 900px;
+  padding-bottom: 10px;
+}
+.step{
+  display: flex;
+  padding: 10px;
+}
+.step__number{
+  font-size: 40px;
+  font-weight: 500;
+  justify-content: center;
+  padding: 0 20px 0 0;
+  opacity: 0.2;
+}
+.step__title{
+  font-size: 22px;
+  font-weight: 500;
+  color: #243e63;
+  padding-bottom: 10px;
+}
+.step__para{
+  font-size: 16px;
 }
