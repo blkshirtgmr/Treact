@@ -634,3 +634,85 @@ p{
   background-color: #048119;
   transition: all 300ms ease;
 }
+.test__row{
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.test__img{
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+.testimonials__description{
+  padding-left: 35px;
+  width: 50%;
+}
+.test__tag{
+  font-size: 16px;
+  letter-spacing: 2px;
+  color:#6415ff;
+}
+.test__title1{
+  font-size: 52px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+.test__para1{
+  font-size: 20px;
+  padding-top: 20px;
+  opacity: 0.6;
+}
+.test__title{
+  font-size: 22px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.test__para{
+  font-size: 16px;
+}
+.test__bottom{
+  display: flex;
+}
+.test__img--person{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+.test__buttons{
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+  padding-top: 30px;
+  border: none;
+}
+.test__button{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.test__divider{
+  padding: 20px;
+}
+.test__profile{
+  display:flex;
+}
+.test__detail{
+  padding-left: 20px;
+  width: 250px;
+  position: absolute;
+  transform: translate(36%, 50%)
+}
+.test__name{
+  font-size: 20px;
+  font-weight: 700;
+}
+.test__button:hover{
+  transform: translate(0%, -10%);
+  transition: all 300ms ease;
+}
