@@ -33,15 +33,15 @@ body{
 }
 .nav__logo{
   display: flex;
-   align-items: center;
+  align-items: center;
 }
 .nav__logo--img{
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
 }
 .nav__logo--title{
   font-weight: 900;
-  font-size: 28px;
+  font-size: 26px;
   align-items: center;
   margin-left: 12px;
   color: #243e63;
