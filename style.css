@@ -174,6 +174,11 @@ p{
   padding-right: 128px;
   opacity: 0.5;
 }
+.feature__row{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .feature__tag{
   font-weight: 700;
   font-size: 18px;
@@ -197,12 +202,14 @@ p{
 }
 .features{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .feature{
   width: calc(100% / 3);
-  max-width: 400px;
   padding: 10px 48px;
 }
 .feature__row{
@@ -674,6 +681,8 @@ p{
 }
 .test__bottom{
   display: flex;
+  flex-direction: row;
+  position: relative;
 }
 .test__img--person{
   height: 100px;
@@ -683,10 +692,11 @@ p{
 }
 .test__buttons{
   display: flex;
-  justify-content: flex-end;
-  width: 400px;
-  padding-top: 30px;
+  flex-direction: row;
+  align-items: flex-start;
   border: none;
+  position: absolute;
+  transform: translate(400%, 80%);
 }
 .test__button{
   width: 40px;
@@ -701,6 +711,7 @@ p{
 }
 .test__profile{
   display:flex;
+  flex-direction: row;
 }
 .test__detail{
   padding-left: 20px;
@@ -930,4 +941,294 @@ p{
   height: 32px;
   fill: #fff;
 
+}
+@media (max-width: 1024px){
+  .header__description{
+    width: 100%;
+  }
+  .header__img--wrapper{
+    width: 100%;
+    padding: 0px;
+  }
+  .features__para{
+    width: 100%;
+  }
+  .quality__row{
+    flex-direction: column;
+  }
+  .quality__description{
+    width: 100%;
+    padding: 0px;
+  }
+  .quality__img--wrapper{
+    width: 100%;
+    padding: 0px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px){
+  .nav__links{
+    display: none;
+  }
+  .nav__link--primary{
+    display: none;
+  }
+  .nav__row{
+    padding: 20px;
+  }
+  .header__description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .header__img{
+    width: 100%;
+    padding: 0px;
+    margin-top: 50px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+  .features{
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+  }
+  .features__title{
+    font-size: 36px;
+  }
+  .features__para{
+    font-size: 18px;
+  }
+  .feature__row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__title{
+    text-align: center;
+    font-size: 26px;
+  }
+  .feature__para{
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+  }
+  .quality__row{
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+  }
+  .quality__tag{
+    text-align: center;
+  }
+  .quality__title{
+    text-align: center;
+    font-size: 36px;
+  }
+  .quality__para{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .quality__btn{
+    font-size: 16px;
+    width: 100%;
+  }
+  .steps__img--wrapper{
+    width: 70%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .steps__description{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .steps__tag{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .steps__title{
+    font-size: 36px;
+    text-align: center;
+  }
+  .step{
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .step__title{
+    font-size: 22px;
+  }
+  .step__para{
+    font-size: 18px;
+    text-align: center;
+  }
+  .values__description{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .value__tag{
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .value__title{
+    font-size: 36px;
+    text-align: center;
+  }
+  .value__para{
+    font-size: 18px;
+    text-align: center;
+  }
+  .values__list{
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  .value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .value__name{
+    font-size: 24px;
+    text-align: center;
+  }
+  .value__para--list{
+    font-size: 16px;
+    text-align: center;
+  }
+  .value__btn{
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .value__img{
+    padding-top: 20px;
+  }
+  .price__tag{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 60px;
+  }
+  .price__title{
+    font-size: 36px;
+    text-align: center;
+  }
+  .price__para{
+    font-size: 18px;
+    text-align: center;
+  }
+  .plans{
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  .plan{
+    width: 300px;
+    margin: 20px 0px;
+  }
+  .plan-sug{
+    width: 300px;
+    margin: 20px 0px;
+  }
+  .test__row{
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+  .testimonials__description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .test__img{
+    width: 80%;
+  }
+  .test__tag{
+    font-size: 18px;
+    text-align: center;
+  }
+  .test__title1{
+    font-size: 36px;
+    width: 100%;
+  }
+  .test__para1{
+    font-size: 18px;
+  }
+  .test__bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .test__profile{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .test__detail{
+    padding: 50px;
+    position: absolute;
+    transform: translate(0% , 60%)
+  }
+  .test__buttons{
+    align-items: center;
+    position: absolute;
+    transform: translate(0%, 410%)
+  }
+  .start__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .start__title{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .start__buttons{
+    width: 100%;
+  }
+  .footer__column--title{
+    font-size: 16px;
+  }
+  .footer__column--link{
+    font-size: 14px;
+  }
+  .footer__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .footer__copyright{
+    position:absolute;
+    font-size: 16px;
+    align-items: center;
+    transform: translate(0%, 80%)
+}
+  .footer__socials{
+    position: absolute;
+    font-size: 18px;
+    transform: translate(0% , 200%)
+  }
 }
